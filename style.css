@@ -7,6 +7,12 @@ body {
   justify-items: center;
 }
 
+@media (max-width: 500px){
+  body {
+    gap: 40px;
+  }
+}
+
 .header{
   justify-items: center;
   display: grid;
@@ -41,6 +47,12 @@ p{
   border: 0.15rem solid transparent;
 }
 
+@media (max-width: 500px){
+  .menu a {
+    display: grid;
+  }
+}
+
 .menu a:hover{
   border: 0.15rem solid red;
 }
@@ -49,6 +61,14 @@ p{
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 62.5rem;
+}
+
+
+@media (max-width: 500px){
+  .painel {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 .painel-primario {
@@ -62,6 +82,19 @@ p{
   background: white;
 }
 
+@media (max-width: 500px){
+  .painel-primario {
+    justify-items: start;
+    text-align: left;
+  }
+}
+
+.painel img{
+  object-fit: cover;
+  height: 100%;
+}
+
+
 .painel-primario::after{
   position: absolute;
   background-color: red;
@@ -70,6 +103,13 @@ p{
   height: 4px;
   top: 30px;
   right: -30px;
+}
+
+
+@media (max-width: 500px){
+  .painel-primario::after{
+    display: none;
+  }
 }
 
 .painel-primario a {
@@ -94,6 +134,13 @@ p{
   font-size: 3.938rem;
   text-align: right;
   align-self: center;
+}
+
+@media (max-width: 500px){
+  .painel-secundario {
+    text-align: center;
+    font-size: 50px;
+  }
 }
 
 .painel-terciario {
